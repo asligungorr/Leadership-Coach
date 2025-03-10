@@ -38,7 +38,7 @@ This project is an advanced Retrieval-Augmented Generation (RAG) Chatbot powered
 
 ##  ****Demo Video**** 🎥
 
-**[Watch the demo on Google Drive]** video1448249942.mp4
+**[Watch the demo]** video1448249942.mp4
 
 
 
