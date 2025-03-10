@@ -9,15 +9,15 @@ from langchain.embeddings.base import Embeddings
 from langchain_community.vectorstores import Weaviate
 
 
-
+# API Anahtarlarını Tanımla
 os.environ["GEMINI_API_KEY"] = "AIzaSyDEiQ_vDfjf2t6iklLDyNpXEhql-C26rHM"
 os.environ["WEAVIATE_APIKEY"] = "q6hPVic6EY6NZmLFV2HZH3MABq3aYh5X7c7I"
 
 WEAVIATE_URL = "https://jf61yhukrgszmxekvubvag.c0.europe-west3.gcp.weaviate.cloud"
 WEAVIATE_API_KEY = os.getenv("WEAVIATE_APIKEY")
 
-
-file_path = "transcripts.txt"  
+# 📌 **Metin Dosyasını Yükleme**
+file_path = "transcripts.txt"  # 📌 VS Code'da aynı dizinde olmalı!
 txt_loader = TextLoader(file_path, encoding="utf-8")
 data = txt_loader.load()
 
