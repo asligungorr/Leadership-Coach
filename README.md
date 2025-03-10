@@ -34,4 +34,20 @@ This project is an advanced Retrieval-Augmented Generation (RAG) Chatbot powered
 - ✅ **RAG-based Retrieval** - Uses Weaviate to fetch relevant knowledge chunks before generating responses.  
 - ✅ **Streaming Chat Interface** - Built with Streamlit for an interactive experience.  
 - ✅ **Audio-to-Text Pipeline** - Uses Whisper AI to generate text-based knowledge from audio sources.  
-- ✅ **Multi-Model Support** - Easily switch between Gemini-1.5-Pro and Gemini-1.5-Flash models.  
+- ✅ **Multi-Model Support** - Easily switch between Gemini-1.5-Pro and Gemini-1.5-Flash models.
+
+##  ****Demo Video**** 🎥
+
+**[Watch the demo on Google Drive]** 
+
+
+
+
+
+
+
+
+
+
+
+
