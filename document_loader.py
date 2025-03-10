@@ -41,7 +41,7 @@ def extract_transcripts_from_downloads():
                 )
                 
                 # Write the title (file name) and transcript to a .txt file
-                txt_file.write(f"VIDEO TITLE: {os.path.splitext(audio_file)[0]}\n")
+                txt_file.write(f"VIDEO BAŞLIĞI: {os.path.splitext(audio_file)[0]}\n")
                 txt_file.write("=" * 50 + "\n")
                 txt_file.write(result["text"] + "\n\n")
                 
