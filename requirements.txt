@@ -1,0 +1,7 @@
+streamlit
+weaviate-client
+google-generativeai
+langchain
+langchain-community
+torch
+openai-whisper
