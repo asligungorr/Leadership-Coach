@@ -48,8 +48,8 @@ auth_config = weaviate.auth.AuthApiKey(api_key=WEAVIATE_API_KEY)
 client = weaviate.Client(
     url=WEAVIATE_URL,
     auth_client_secret=auth_config,
-    startup_period=10,
-    additional_headers={"X-Weaviate-Api-Key": WEAVIATE_API_KEY,"X-Weaviate-Cluster-Url": WEAVIATE_URL}
+    #startup_period=10,
+    #additional_headers={"X-Weaviate-Api-Key": WEAVIATE_API_KEY,"X-Weaviate-Cluster-Url": WEAVIATE_URL}
 )
 
 
