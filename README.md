@@ -56,3 +56,12 @@ The **Leadership Coach Chatbot** is an advanced **Retrieval‑Augmented Generati
 - Role‑specific dialogue fine‑tuning (coach, HR, mentor)  
 - Calendar/task integrations for proactive coaching tips  
 
+---
+
+## 🌐 Live Deployment
+
+📍 The app is deployed on Streamlit Cloud.  
+🔗 Deployment link is available upon request.
+
+
+
