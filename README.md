@@ -1,53 +1,58 @@
-#  ****Leadership Coach Chatbot****
+# 🚀 **Leadership Coach Chatbot**
 
- **Project Overview**
-
-This project is an advanced Retrieval-Augmented Generation (RAG) Chatbot powered by Weaviate as a vector database and Google Gemini API as the generative model. The chatbot leverages a knowledge base extracted from transcripts, enabling intelligent and context-aware responses based on real-world documents.
-
----
-
- **Tech Stack**
-
-- **Python**: Core programming language  
-- **Streamlit**: Interactive UI for the chatbot  
-- **Weaviate**: Vector database for storing and retrieving document embeddings  
-- **Google Gemini API**: Large language model for generating responses  
-- **LangChain**: Managing document ingestion and retrieval  
-- **Whisper AI**: Automated speech-to-text transcription for building the knowledge base  
+## 📘 Project Overview
+The **Leadership Coach Chatbot** is an advanced **Retrieval‑Augmented Generation (RAG)** system for leadership development. It couples **Weaviate** (vector search) with the **Google Gemini API** (large‑language model) to generate intelligent, context‑aware answers grounded in a custom knowledge base built from real‑world audio transcripts.
 
 ---
 
- **How It Works**
-
-###  **Knowledge Base Preparation**
-- The **document_loader.py** script extracts text from audio files using **Whisper AI** and saves it to `transcripts.txt`.  
-- The **chatbot.py** script processes these transcripts and stores them as **vector embeddings** in **Weaviate**.  
-
-###  **Chatbot Interaction**
-- User queries are processed in **app.py**, where the chatbot retrieves the most relevant document chunks from **Weaviate**.  
-- Retrieved documents are provided as context to **Google Gemini**, generating an **enhanced response**.  
+## 🧰 Tech Stack
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| Core  | **Python** | Main development language |
+| UI    | **Streamlit** | Interactive web interface |
+| Storage | **Weaviate** | Vector database for semantic retrieval |
+| LLM   | **Google Gemini API** | Response generation (Gemini 1.5 Pro / Flash) |
+| Orchestration | **LangChain** | Ingestion, retrieval, and prompt chaining |
+| Transcription | **Whisper AI** | High‑accuracy speech‑to‑text |
 
 ---
 
- **Key Features**
+## ⚙️ How It Works
 
--  **RAG-based Retrieval** - Uses Weaviate to fetch relevant knowledge chunks before generating responses.  
--  **Streaming Chat Interface** - Built with Streamlit for an interactive experience.  
--  **Audio-to-Text Pipeline** - Uses Whisper AI to generate text-based knowledge from audio sources.  
--  **Multi-Model Support** - Easily switch between Gemini-1.5-Pro and Gemini-1.5-Flash models.
+### 📥 1. Knowledge Base Construction
+1. `document_loader.py` → converts audio to text via **Whisper AI** → saves to `transcripts.txt`.  
+2. `chatbot.py` → creates vector embeddings from transcripts → indexes them in **Weaviate**.
 
-##  ****Demo Video**** 
+### 💬 2. Chatbot Interaction
+1. A user query arrives through the **Streamlit** app (`app.py`).  
+2. Relevant transcript chunks are retrieved from **Weaviate**.  
+3. Those chunks are injected as context into **Google Gemini**, which returns a precise, well‑grounded reply.
 
-**[Watch the demo]** video1448249942.mp4
+---
 
+## 🎯 Key Features
+- 🔍 **RAG‑based Retrieval** – grounded answers backed by primary documents.  
+- 🎙️ **Audio‑to‑Text Pipeline** – fully automated with **Whisper AI**.  
+- 💡 **Contextual Intelligence** – leverages real leadership conversations.  
+- 💬 **Live Chat Interface** – responsive Streamlit UI with streaming tokens.  
+- 🔄 **Model Flexibility** – switch between *Gemini 1.5 Pro* and *Flash* effortlessly.
 
+---
 
+## 🎥 Demo
+**[▶ Watch the demo](video1448249942.mp4)** — a quick walkthrough illustrating end‑to‑end transcription, retrieval, and answer generation.
 
+---
 
+## ✅ Use Cases
+- Executive & leadership coaching  
+- AI‑driven training simulations  
+- Conversational knowledge assistants
 
+---
 
-
-
-
-
+## 📌 Roadmap
+- Multilingual transcription & Q/A  
+- Role‑specific dialogue fine‑tuning (coach, HR, mentor)  
+- Calendar/task integrations for proactive coaching tips  
 
