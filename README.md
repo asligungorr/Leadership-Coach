@@ -20,8 +20,9 @@ The **Leadership Coach Chatbot** is an advanced **Retrieval‑Augmented Generati
 ## ⚙️ How It Works
 
 ### 📥 1. Knowledge Base Construction
-1. `document_loader.py` → converts audio to text via **Whisper AI** → saves to `transcripts.txt`.  
-2. `chatbot.py` → creates vector embeddings from transcripts → indexes them in **Weaviate**.
+1. `document_loader.py` → converts audio to text via **Whisper AI** → saves to `transcripts.txt`.
+   > **Note:** Audio was sourced from a curated [YouTube playlist on leadership coaching](https://www.youtube.com/playlist?list=PLHSXjBr0dFpm4tx2qzAgGN8Dv98d9lZtx), and transcribed automatically using Whisper AI.    
+3. `chatbot.py` → creates vector embeddings from transcripts → indexes them in **Weaviate**.
 
 ### 💬 2. Chatbot Interaction
 1. A user query arrives through the **Streamlit** app (`app.py`).  
